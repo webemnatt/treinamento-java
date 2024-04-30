@@ -4,7 +4,13 @@
   // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    
+    {
+      "type": "java",
+      "name": "AboutAnyone",
+      "request": "launch",
+      "mainClass": "AboutAnyone",
+      "projectName": "treinamento-java_d3bb7aa7"
+    },
     {
       "type": "java",
       "name": "Current File",
@@ -23,7 +29,6 @@
       "name": "AboutMe",
       "request": "launch",
       "mainClass": "edu.meu.semana02.AboutMe",
-      // "projectName": "treinamento-java_d3bb7aa7"
       "args": [
         "Maria",
         "Carolina",

@@ -59,3 +59,14 @@ Observe que o arquivo **AboutMe.java** está recebendo os argumentos dentro de c
 4. Clique em *Run* e veja a saída do terminal.
 
 **Obs.:** Sem essa configuração, ao executar o arquivo, a saída seria sempre a do bloco *else* do código.
+
+## Informando dados vias *java.util.Scanner*
+A classe java Scanner permite organizar melhor a saída e a entrada de dados, orientando o usuário sobre qual dado informar.
+
+Desta vez a classe **AboutAnyone** pede os dados um por um ao usuário.
+* Funciona tanto executando o arquivo de extensão *.java* 
+* quanto pela linha de comando na pasta *bin*
+  * Digitando apenas `java AboutAnyone`
+
+**Obs.:** Não foi alterado o arquivo *launch.json* porque não há manipulação do parâmetro `args` do método `main()`.
+
