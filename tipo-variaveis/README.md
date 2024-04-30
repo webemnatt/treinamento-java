@@ -16,3 +16,12 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Javadoc
+
+Usado o método de geração de documentação para HTML usando o comando no terminal:
+
+```
+javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/SmartTV.java
+```
+
