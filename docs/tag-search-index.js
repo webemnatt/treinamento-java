@@ -1,1 +1,1 @@
-tagSearchIndex = [{"l":"SmartTv Intelligent","h":"class SmartTV","d":"Section","u":"SmartTV.html#smarttv-intelligent-heading"}];updateSearchResults();
+tagSearchIndex = [];updateSearchResults();
