@@ -17,6 +17,8 @@ public class AboutAnyone {
     System.out.print("Digite a idade:\t");
     int idade = scanner.nextInt();
 
+    scanner.close();
+
     System.out.format("O nome da pessoa é %s %s, tem %d anos e %.2f de altura.\n",
         nome, sobrenome, idade, altura);
   }
