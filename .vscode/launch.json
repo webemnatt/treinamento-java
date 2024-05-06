@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AboutMe",
+      "request": "launch",
+      "mainClass": "excecoes.AboutMe",
+      "projectName": "treinamento-java_d3bb7aa7"
+    },
+    {
+      "type": "java",
+      "name": "ExemploFor",
+      "request": "launch",
+      "mainClass": "ExemploFor",
+      "projectName": "treinamento-java_d3bb7aa7"
+    },
+    {
+      "type": "java",
       "name": "AboutAnyone",
       "request": "launch",
       "mainClass": "AboutAnyone",
