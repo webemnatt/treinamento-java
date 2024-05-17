@@ -1,4 +1,4 @@
-package edu.meu.collections.ordenacao;
+package edu.meu.collections.list.ordenacao;
 
 public class TesteOrdenaçãoPessoas {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package edu.meu.collections.atribuicoes;
+package edu.meu.collections.list.atribuicoes;
 
 public class TesteListaTarefas {
   public static void main(String[] args) {

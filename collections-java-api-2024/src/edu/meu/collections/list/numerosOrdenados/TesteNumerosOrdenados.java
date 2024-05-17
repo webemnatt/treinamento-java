@@ -1,4 +1,4 @@
-package edu.meu.collections.numerosOrdenados;
+package edu.meu.collections.list.numerosOrdenados;
 
 import java.util.List;
 

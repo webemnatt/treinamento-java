@@ -1,4 +1,4 @@
-package edu.meu.collections.pesquisa;
+package edu.meu.collections.list.pesquisa;
 
 /**
  * Esta classe tem como atributos titulo, autor e ano de publicação.

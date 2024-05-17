@@ -1,4 +1,4 @@
-package edu.meu.collections.ordenacao;
+package edu.meu.collections.list.ordenacao;
 
 /**
  * Esta classe implementa a interface Comparable e recebe como generics a

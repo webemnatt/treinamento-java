@@ -1,4 +1,4 @@
-package edu.meu.collections.pesquisa;
+package edu.meu.collections.list.pesquisa;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package edu.meu.collections.atribuicoes;
+package edu.meu.collections.list.atribuicoes;
 
 /**
  * A classe Tarefa possui apenas um atributo chamado <strong>descricao</strong>

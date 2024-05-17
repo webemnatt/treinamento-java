@@ -1,4 +1,4 @@
-package edu.meu.collections.loja.online;
+package edu.meu.collections.list.loja.online;
 
 import java.util.ArrayList;
 import java.util.List;

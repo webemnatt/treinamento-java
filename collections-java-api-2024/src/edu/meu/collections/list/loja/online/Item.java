@@ -1,4 +1,4 @@
-package edu.meu.collections.loja.online;
+package edu.meu.collections.list.loja.online;
 
 /**
  * Classe com atributos privados <strong>nome</strong>,<strong>preco</strong>, e <strong>quantidade</strong>.

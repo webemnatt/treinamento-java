@@ -1,10 +1,10 @@
-package edu.meu.collections.ordenacao;
+package edu.meu.collections.list.ordenacao;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import edu.meu.collections.ordenacao.comparator.ComparadorPessoasAltura;
+import edu.meu.collections.list.ordenacao.comparator.ComparadorPessoasAltura;
 
 /**
  * Esta classe possui três métodos:

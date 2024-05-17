@@ -1,4 +1,4 @@
-package edu.meu.collections.atribuicoes;
+package edu.meu.collections.list.atribuicoes;
 
 import java.util.ArrayList;
 import java.util.List;

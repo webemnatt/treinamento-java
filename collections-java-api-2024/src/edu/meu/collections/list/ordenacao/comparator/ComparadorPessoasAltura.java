@@ -1,8 +1,8 @@
-package edu.meu.collections.ordenacao.comparator;
+package edu.meu.collections.list.ordenacao.comparator;
 
 import java.util.Comparator;
 
-import edu.meu.collections.ordenacao.Pessoa;
+import edu.meu.collections.list.ordenacao.Pessoa;
 
 /**
  * Esta classe é uma classe complementar à classe Pessoa, uma vez que não é
