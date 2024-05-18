@@ -1,4 +1,4 @@
-package edu.meu.collections.set.pesquisa.listaTarefas;
+package edu.meu.collections.set.hashSet.pesquisa.listaTarefas;
 
 import java.util.Set;
 

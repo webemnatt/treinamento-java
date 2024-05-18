@@ -1,4 +1,4 @@
-package edu.meu.collections.set.ordenacao.Alunos;
+package edu.meu.collections.set.treeSet.ordenacao.alunos;
 
 public class TesteAdicionarAluno {
   public static void main(String[] args) {

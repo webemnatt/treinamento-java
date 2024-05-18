@@ -1,4 +1,4 @@
-package edu.meu.collections.set.pesquisa.listaTarefas;
+package edu.meu.collections.set.hashSet.pesquisa.listaTarefas;
 
 /**
  * Cada tarefa possui um atributo de descrição e um atributo booleano para

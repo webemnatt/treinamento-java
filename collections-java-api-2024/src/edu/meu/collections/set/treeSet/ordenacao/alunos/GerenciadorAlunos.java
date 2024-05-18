@@ -1,4 +1,4 @@
-package edu.meu.collections.set.ordenacao.Alunos;
+package edu.meu.collections.set.treeSet.ordenacao.alunos;
 
 import java.util.HashSet;
 import java.util.Set;

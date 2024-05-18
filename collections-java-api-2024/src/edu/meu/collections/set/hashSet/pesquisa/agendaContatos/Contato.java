@@ -1,4 +1,4 @@
-package edu.meu.collections.set.pesquisa.agendaContatos;
+package edu.meu.collections.set.hashSet.pesquisa.agendaContatos;
 
 /**
  * Cada contato possui atributos como nome e número de telefone.

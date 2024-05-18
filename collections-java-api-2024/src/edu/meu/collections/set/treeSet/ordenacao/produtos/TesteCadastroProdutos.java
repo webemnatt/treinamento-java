@@ -1,4 +1,4 @@
-package edu.meu.collections.set.ordenacao.produtos;
+package edu.meu.collections.set.treeSet.ordenacao.produtos;
 
 public class TesteCadastroProdutos {
   public static void main(String[] args) {

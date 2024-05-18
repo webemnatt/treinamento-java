@@ -1,4 +1,4 @@
-package edu.meu.collections.set.ordenacao.produtos;
+package edu.meu.collections.set.treeSet.ordenacao.produtos;
 
 /**
  * Classe responsável pela criação de um produto. possui atributos

@@ -1,4 +1,4 @@
-package edu.meu.collections.set.operacoesBasicas.conjuntoConvidados;
+package edu.meu.collections.set.hashSet.operacoesBasicas.conjuntoConvidados;
 
 import java.util.HashSet;
 import java.util.Set;

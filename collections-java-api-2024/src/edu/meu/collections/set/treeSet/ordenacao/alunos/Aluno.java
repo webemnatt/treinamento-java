@@ -1,4 +1,4 @@
-package edu.meu.collections.set.ordenacao.Alunos;
+package edu.meu.collections.set.treeSet.ordenacao.alunos;
 
 /**
  * Esta classe cria um Aluno com atributos privados nome, matricula e nota.

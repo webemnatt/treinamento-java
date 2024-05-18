@@ -1,4 +1,4 @@
-package edu.meu.collections.set.operacoesBasicas.conjuntoPalavras;
+package edu.meu.collections.set.hashSet.operacoesBasicas.conjuntoPalavras;
 
 import java.util.Set;
 
