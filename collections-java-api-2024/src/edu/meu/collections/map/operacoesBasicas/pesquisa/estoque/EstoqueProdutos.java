@@ -1,4 +1,4 @@
-package edu.meu.collections.map.operacoesBasicas.pesquisa;
+package edu.meu.collections.map.operacoesBasicas.pesquisa.estoque;
 
 import java.util.Map;
 
@@ -13,7 +13,7 @@ import java.util.Map;
  * <strong>obterProdutoMaiorQuantidadeValorTotalNoEstoque</strong>.
  * 
  * @author webemnatt
- * @version 1.0.0
+ * @version 1.0.1
  * @since 05/20/24
  */
 public class EstoqueProdutos {
@@ -61,39 +61,34 @@ public class EstoqueProdutos {
   }
 
   /**
-   * Método auxiliar que compara preços dentro do estoque:
-   * 1. verifica se o conjunto tem elementos.
-   * 2. itera o Map evidenciando cada entrada.
-   * 3. se o elemento que será retornado estiver null, ele receberá o valor da
-   * primeira entrada.
-   * 4. Se o elemento já tiver um valor, então será comparado com o da próxima
-   * entrada.
-   * 5. o produto terá seu valor reatribuído de acordo com a comparação:
-   * se falso, armazena o produto com maior preço, se true, armazena o produto com
-   * menor preço.
-   * 6. A saída será o Produto de maior/menor preço.
+   * Método auxiliar para encontrar o produto procurado.
+   * Se é pelo maior preço, armazena o produto com maior preço.
+   * Senão, armazena o de menor preço.
    * 
-   * @param produto
-   * @param precoAtualEMenorPreco boolean.
-   * @return o Produto
+   * @param produtoProcurado do tipo produto
+   * @param peloMaiorPreco   do tipo boolean
+   * @return
    */
-  private Produto comparaPreco(Produto produto, boolean maiorPreco) {
+  private Produto procurarProduto(Produto produtoProcurado, boolean peloMaiorPreco) {
+    double valorMinimo = Double.MIN_VALUE;
+    double valorMaximo = Double.MAX_VALUE;
+
     if (!estoque.isEmpty()) {
-      for (Map.Entry<Long, Produto> entrada : estoque.entrySet()) {
-        if (produto == null) {
-          produto = entrada.getValue();
+      for (Produto p : estoque.values()) {
+        if (peloMaiorPreco) {
+          if (p.getPreco() > valorMinimo) {
+            produtoProcurado = p;
+            valorMinimo = p.getPreco();
+          }
         } else {
-          if (maiorPreco) {
-            if (produto.getPreco() < entrada.getValue().getPreco())
-              produto = entrada.getValue();
-          } else {
-            if (produto.getPreco() > entrada.getValue().getPreco())
-              produto = entrada.getValue();
+          if (p.getPreco() < valorMaximo) {
+            produtoProcurado = p;
+            valorMaximo = p.getPreco();
           }
         }
       }
     }
-    return produto;
+    return produtoProcurado;
   }
 
   /**
@@ -103,7 +98,7 @@ public class EstoqueProdutos {
    */
   public Produto obterProdutoMaisCaro() {
     Produto produtoMaisCaro = null;
-    produtoMaisCaro = comparaPreco(produtoMaisCaro, true);
+    produtoMaisCaro = procurarProduto(produtoMaisCaro, true);
     return produtoMaisCaro;
   }
 
@@ -114,13 +109,14 @@ public class EstoqueProdutos {
    */
   public Produto obterProdutoMaisBarato() {
     Produto produtoMaisBArato = null;
-    produtoMaisBArato = comparaPreco(produtoMaisBArato, false);
+    produtoMaisBArato = procurarProduto(produtoMaisBArato, false);
     return produtoMaisBArato;
   }
 
   /**
    * Método compara valores totais (quantidade * preço) entre produtos e retorna o
-   * PRIMEIRO PRODUTO mais valioso do estoque, mesmo que haja outros produtos de mesmo valor
+   * PRIMEIRO PRODUTO mais valioso do estoque, mesmo que haja outros produtos de
+   * mesmo valor
    * 
    * @return um Produto.
    */

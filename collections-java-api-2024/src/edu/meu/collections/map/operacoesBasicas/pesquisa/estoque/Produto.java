@@ -1,4 +1,4 @@
-package edu.meu.collections.map.operacoesBasicas.pesquisa;
+package edu.meu.collections.map.operacoesBasicas.pesquisa.estoque;
 
 /**
  * Cada produto possui um código como chave e um objeto Produto como valor,

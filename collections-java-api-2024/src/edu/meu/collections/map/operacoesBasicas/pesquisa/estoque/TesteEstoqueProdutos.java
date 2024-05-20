@@ -1,4 +1,4 @@
-package edu.meu.collections.map.operacoesBasicas.pesquisa;
+package edu.meu.collections.map.operacoesBasicas.pesquisa.estoque;
 
 public class TesteEstoqueProdutos {
   public static void main(String[] args) {
@@ -29,5 +29,8 @@ public class TesteEstoqueProdutos {
     Produto produtoMaisCaro = estoque.obterProdutoMaisCaro();
     System.out.println("Produto mais caro: " + produtoMaisCaro);
     System.out.println();
+
+    double valorTotalEstoque = estoque.calcularValorTotalEstoque();
+    System.out.printf("Valor total do estoque: %.2f\n", valorTotalEstoque);
   }
 }
