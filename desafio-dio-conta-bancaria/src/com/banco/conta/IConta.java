@@ -1,3 +1,4 @@
+package com.banco.conta;
 public interface IConta {
 
   void sacar(double valor);

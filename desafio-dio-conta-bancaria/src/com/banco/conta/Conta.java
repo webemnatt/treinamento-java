@@ -1,3 +1,8 @@
+package com.banco.conta;
+
+import java.time.LocalDate;
+import com.banco.cliente.*;
+
 public abstract class Conta implements IConta {
 
   private static final int AGENCIA_PADRAO = 1;
@@ -8,7 +13,8 @@ public abstract class Conta implements IConta {
   private int numero;
   private double saldo;
   private Cliente titular;
-  // private static int totalContas;
+  private LocalDate dataAbertura;
+  private LocalDate dataEncerramento;
 
   public Conta(Cliente cliente) {
     this.agencia = AGENCIA_PADRAO;
@@ -49,9 +55,25 @@ public abstract class Conta implements IConta {
     return titular;
   }
 
-  // public static int getTotalContas() {
-  // return totalContas;
-  // }
+  public LocalDate getDataAbertura() {
+    return dataAbertura;
+  }
+
+  public LocalDate getDataEncerramento() {
+    return dataEncerramento;
+  }
+
+  protected void setDataEncerramento(LocalDate dataEncerramento) {
+    this.dataEncerramento = dataEncerramento;
+  }
+
+  protected void setDataAbertura(LocalDate dataAbertura) {
+    this.dataAbertura = dataAbertura;
+  }
+
+  public void setTitular(Cliente titular) {
+    this.titular = titular;
+  }
 
   public void setSaldo(double saldo) {
     this.saldo = saldo;
@@ -64,5 +86,4 @@ public abstract class Conta implements IConta {
     System.out.println(String.format("Número: %d", this.numero));
     System.out.println(String.format("Saldo: R$ %.2f", this.saldo));
   }
-
 }
