@@ -9,10 +9,6 @@ public class Banco {
   private List<Conta> contas;
   private List<Conta> contasEncerradas;
 
-  // usar métodos de exibir por data abertura, data encerramento, por ordem de
-  // número de conta,
-  // por tipo de conta, por saldo, por nome do titular
-
   public Banco() {
     this.contas = new ArrayList<>();
     this.contasEncerradas = new ArrayList<>();
@@ -21,6 +17,12 @@ public class Banco {
   public void abrirConta(Conta conta) {
     this.contas.add(conta);
     conta.setDataAbertura(LocalDate.now());
+  }
+
+  public List<Conta> pesquisarPorCpf(String cpf) {
+    return this.contas.stream()
+        .filter(conta -> conta.getTitular().getCPF().equals(cpf))
+        .toList();
   }
 
   public void encerrarConta(int numeroConta) {
@@ -89,6 +91,22 @@ public class Banco {
       }
     }
     return totalContasPoupanca;
+  }
+
+  public void transferenciaEntreContas(int numeroContaSaida, int numeroContaEntrada, double valor) {
+    Conta contaSaida = null;
+    Conta contaEntrada = null;
+    for (Conta conta : contas) {
+      if (conta.getNumero() == numeroContaSaida) {
+        contaSaida = conta;
+      } else if (conta.getNumero() == numeroContaEntrada) {
+        contaEntrada = conta;
+      }
+    }
+    
+    if (contaSaida != null && contaEntrada != null) {
+      contaSaida.transferir(contaEntrada, valor);
+    }
   }
 
   public String getNome() {

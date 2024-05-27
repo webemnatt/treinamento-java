@@ -1,4 +1,7 @@
-package com.banco.conta;
+package com.banco.conta.modelo;
+
+import com.banco.conta.Conta;
+
 public interface IConta {
 
   void sacar(double valor);

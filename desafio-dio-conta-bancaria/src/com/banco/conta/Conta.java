@@ -2,6 +2,7 @@ package com.banco.conta;
 
 import java.time.LocalDate;
 import com.banco.cliente.*;
+import com.banco.conta.modelo.*;
 
 public abstract class Conta implements IConta {
 
